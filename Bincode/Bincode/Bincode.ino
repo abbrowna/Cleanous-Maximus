@@ -56,34 +56,61 @@ bool ramp_down = 0;
 volatile int ramp_factor = 0; // This will be increased progressively to alter playback volume at end of file.
 File audio;
 
-//sSENSOR VARIABLES
+//SENSOR VARIABLES
 volatile int pass_count = 0;
-int distanceping = 0;
+int pingleft = 4;
+int pingright = 13;
+int pingcenter = 3;
 int PIRpin = 2;
-int throwPIR = 5;
-int levelping = 3;
+int throwPIR = 7;
+int levelping = 0;
 volatile unsigned long lastapproach = 0;
 volatile unsigned long lastthrow = 0;
 volatile bool throwin = 0;
+struct proxi_multi
+{
+	int distance;
+	int sensor;
+};
+
+
+//EYE VARIABLES
+const int pan = 3;
+const int tilt = 6;
+Servo panservo;
+Servo tiltservo;
 
 void setup() {
 	Serial.begin(115200);
 	while (!Serial) {
 	}
-	if (!SD.begin())
-	{
-		Serial.println("Failed to initiallize SD");
-		return;
-	}
-	else
+	//if (!SD.begin())
+	//{
+	//	Serial.println("Failed to initiallize SD");
+	//	return;
+	//}
+	//else
 		Serial.println("SD initialized succesfully");
 	//attatch an interrupt to the PIR that will trigger a response from the bin.
 	attachInterrupt(digitalPinToInterrupt(PIRpin), motiondetect, RISING);
 	attachInterrupt(digitalPinToInterrupt(throwPIR), throwdetect, RISING);
+	panservo.attach(pan);
+	tiltservo.attach(tilt);
 }
 
 void loop() {
-
+	for (int i = 0; i < 180; i++)
+	{
+		panservo.write(i);
+		tiltservo.write(i);
+		delay(20);
+	}
+	for (int i = 180; i > 0; i--)
+	{
+		panservo.write(i);
+		tiltservo.write(i);
+		delay(20);
+	}
 }
 
 //this function selects aan audiofile from the passed category to be played at random
@@ -132,11 +159,11 @@ void pwm_setup(int pin)
 		QRK_PWM_CONTROL_ENABLE;			//enable timer
 }
 
-void sampleISR()
+void sampleISR() //this ISR is called to retrieve and play the next sample from the audio file.
 {
 	noInterrupts(); //Disable interrupts
 
-					//Check to see if we've read all of the data in the current buffer
+	//Check to see if we've read all of the data in the current buffer
 	if (byte_count == BUFFERSIZE)
 	{
 		need_new_data = 1;//Set a flag to tell the 'loop' code to refill the current buffer.
@@ -313,6 +340,8 @@ void playaudio(const char *filename) {
 	}
 	attachInterrupt(digitalPinToInterrupt(PIRpin), motiondetect, RISING); //reattatch the PIR interrupt.
 }
+
+//checks the proximity on a specifiec sensor.
 int proximity(int pingPin)
 {
 	int sum = 0;
@@ -329,28 +358,53 @@ int proximity(int pingPin)
 		pinMode(pingPin, INPUT);
 		duration = pulseIn(pingPin, HIGH);
 		sum = sum + (duration / 29 / 2);
+		delay(100);
 	}
 	interrupts(); //reanable interrupts
 	return sum / 3;
 }
- void motiondetect()
+
+
+//checks the proximity on all three sensors and returns the shortest distanceof the three
+struct proxi_multi proximity_multiple()
 {
-	 if (proximity(distanceping) < 50)
+	struct proxi_multi d;
+	int prox1 = proximity(pingright);
+	int prox2 = proximity(pingcenter);
+	int prox3 = proximity(pingleft);
+	int min = prox1;
+	d.sensor = prox1;
+	if (prox2 < min) {
+		min = prox2;
+		d.sensor = prox2;
+	}
+	if (prox3 < min) {
+		min = prox3;
+		d.sensor = prox3;
+	}
+	d.distance = min;
+	return d;
+}
+
+//This in an ISR called every time the the outer PIR detects motion after a period of inactivity.
+ void motiondetect()  
+{
+	 struct proxi_multi minsurround = proximity_multiple();
+	 if (minsurround.distance < 50)
 	 {
-		 //either approaching the bin, near the bin or walking away frm the bin.
-		 if (millis() - lastapproach > 10000 && !throwin) //the are approaching
+		 //either approaching the bin, near the bin or walking away from the bin.
+		 if (millis() - lastapproach > 10000 && !throwin)		//the are approaching
 		 {
 			 playaudio(audio_select(approach));
 			 lastapproach = millis();
 		 }
-		 else if (millis() - lastapproach > 3000 && throwin)
-		 {
-			 //they are leaving.
+		 else if (millis() - lastapproach > 3000 && throwin)	//they are leaving.
+		 { 
 			 playaudio(audio_select(leaving));
 			 throwin = 0;
 		 }
 	 }
-	 else if (proximity(distanceping) > 50)
+	 else if (minsurround.distance > 50)
 	 {
 		 //someone just passed by. Say hello if they are the 5th person to do so.
 		 pass_count++;
@@ -361,7 +415,9 @@ int proximity(int pingPin)
 		 }
 	 }
 }
- void throwdetect()
+
+//Called when inner PIR detects motion.
+ void throwdetect()	
  {
 	 if ((millis() - lastthrow) > 2000)
 	 {
@@ -370,4 +426,106 @@ int proximity(int pingPin)
 		 lastthrow = millis();
 	 }
  }
+
+//(panangle;tiltangle;ms between angles)
+ void eye_move(int pan, int tilt, int speed = 0) 
+ {
+	 int lastpan = panservo.read();
+	 int lasttilt = tiltservo.read();
+	 int pandiff = abs(pan - lastpan);
+	 int tiltdiff = abs(tilt - tiltdiff);
+	 if (tiltdiff >= pandiff)
+	 {
+		 float ratio = pandiff/tiltdiff;
+		 if (tilt >= lasttilt)
+		 {
+			 if (pan >= lastpan)
+			 {
+				 for (int t = lasttilt , float p = lastpan; t < tilt; t++,p += ratio)
+				 {
+					 tiltservo.write(t);
+					 panservo.write(round(p));
+					 delay(speed);
+				 }
+			 }
+			 else if (pan < lastpan)
+			 {
+				 for (int t = lasttilt, float p = lastpan; t < tilt; t++, p -= ratio)
+				 {
+					 tiltservo.write(t);
+					 panservo.write(p);
+					 delay(speed);
+				 }
+			 }
+		 }
+		 else if (tilt < lasttilt)
+		 {
+			 if (pan >= lastpan)
+			 {
+				 for (int t = lasttilt, float p = lastpan; t > tilt; t--, p += ratio)
+				 {
+					 tiltservo.write(t);
+					 panservo.write(round(p));
+					 delay(speed);
+				 }
+			 }
+			 else if (pan < lastpan)
+			 {
+				 for (int t = lasttilt, float p = lastpan; t > tilt; t--, p -= ratio)
+				 {
+					 tiltservo.write(t);
+					 panservo.write(round(p));
+					 delay(speed);
+				 }
+			 }
+		 }
+	 }
+	 else if (pandiff > tiltdiff)
+	 {
+		 float ratio = tiltdiff / pandiff;
+		 if (pan >= lastpan)
+		 {
+			 if (tilt >= lasttilt)
+			 {
+				 for (int p = lastpan, float t = lasttilt; p < pan; p++, t += ratio)
+				 {
+					 panservo.write(p);
+					 tiltservo.write(round(t));
+					 delay(speed);
+				 }
+			 }
+			 else if (tilt < lasttilt)
+			 {
+				 for (int p = lastpan, float t = lasttilt; p < pan; p++, t -= ratio)
+				 {
+					 panservo.write(p);
+					 tiltservo.write(round(t));
+					 delay(speed);
+				 }
+			 }
+		 }
+		 else if (pan < lastpan)
+		 {
+			 if (tilt > lasttilt)
+			 {
+				 for (int p = lastpan, float t = lasttilt; p > pan; p--, t += ratio)
+				 {
+					 panservo.write(p);
+					 tiltservo.write(round(t));
+					 delay(speed);
+				 }
+			 }
+			 else if (tilt < lasttilt)
+			 {
+				 for (int p = lastpan, float t = lasttilt; p > pan; p--, t -= ratio)
+				 {
+					 panservo.write(p);
+					 tiltservo.write(round(t));
+					 delay(speed);
+				 }
+			 }
+		 }
+	 }
+ }
+ 
 
