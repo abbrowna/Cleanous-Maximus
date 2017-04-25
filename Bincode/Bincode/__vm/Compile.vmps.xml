@@ -1,227 +1,232 @@
 <VisualMicro>
-  <Program Name="Bincode" Ext=".ino" Location="C:\Users\Anthony Brown\Source\Repos\Smart personality bin\Bincode\Bincode">
-    <Compile ReCompileIfSourceIsNewer="1" IsDebugStart="1" IsGdb="0" CompilerErrors="0" ConfigurationName="Debug" UseConfigurationNameInBuildFolder="True" StopOnError="False" OptimiseLibs="True" OptimiseCore="True" BuildPath="C:\Users\Anthony Brown\AppData\Local\Temp\VMBuilds\Bincode\Intel_intel_arc32_arduino_101\Debug" SketchName="Bincode" ReportDigitalPins="0" ReportAnalogPins="0" ReportI2C="0" ReportFreeMemory="0" IncludeDebug="1" LastDebugPreProcessorDefinitions="VM_DEBUG;VM_DEBUG_ENABLE 1;VM_DEBUG_BANDWIDTH_THROTTLE_MS 100;VM_DEBUGGER_TYPE_HARDWARESERIAL 0;VM_DEBUGGER_TYPE_SOFTWARESERIAL 1;VM_DEBUGGER_TYPE_FASTSERIAL 2;VM_DEBUGGER_TYPE_USB 3;VM_DEBUGGER_TYPE_TEENSY 4;VM_DEBUGGER_TYPE_UART 5;VM_DEBUGGER_TYPE_USART 6;VM_DEBUGGER_TYPE_USBSERIAL 7;VM_DEBUGGER_TYPE_TTYUART 8;VM_DEBUGGER_TYPE_NET_CONSOLE 9;VM_DEBUGGER_TYPE_Uart 10;VM_DEBUGGER_TYPE_COSA 11;VM_DEBUGGER_TYPE_CDCSerialClass 12;VM_DEBUGGER_TYPE_HARDWARESERIAL1 13;VM_DEBUGGER_TYPE_HARDWARESERIAL2 14;VM_DEBUGGER_TYPE_HARDWARESERIAL3 15;VM_DEBUGGER_TYPE_NET_UDP 16;VM_DEBUGGER_TYPE_USBAPI 17;VM_DEBUGGER_TYPE VM_DEBUGGER_TYPE_CDCSerialClass;VM_DEBUG_BREAKPAUSE;" IncludesDebug="1" IsCompiled="1" />
+  <Program Name="Bincode" Ext=".ino" Location="C:\Users\abbro\Source\Repos\Smart personality bin\Bincode\Bincode">
+    <Compile ReCompileIfSourceIsNewer="1" IsDebugStart="1" IsGdb="0" CompilerErrors="0" ConfigurationName="Debug" UseConfigurationNameInBuildFolder="True" StopOnError="False" OptimiseLibs="True" OptimiseCore="True" BuildPath="C:\Users\abbro\AppData\Local\Temp\VMBuilds\Bincode\Intel_intel_arc32_arduino_101\Debug" SketchName="Bincode" ReportDigitalPins="0" ReportAnalogPins="0" ReportI2C="0" ReportFreeMemory="0" IncludeDebug="1" LastDebugPreProcessorDefinitions="VM_DEBUG;VM_DEBUG_ENABLE 1;VM_DEBUG_BANDWIDTH_THROTTLE_MS 100;VM_DEBUGGER_TYPE_HARDWARESERIAL 0;VM_DEBUGGER_TYPE_SOFTWARESERIAL 1;VM_DEBUGGER_TYPE_FASTSERIAL 2;VM_DEBUGGER_TYPE_USB 3;VM_DEBUGGER_TYPE_TEENSY 4;VM_DEBUGGER_TYPE_UART 5;VM_DEBUGGER_TYPE_USART 6;VM_DEBUGGER_TYPE_USBSERIAL 7;VM_DEBUGGER_TYPE_TTYUART 8;VM_DEBUGGER_TYPE_NET_CONSOLE 9;VM_DEBUGGER_TYPE_Uart 10;VM_DEBUGGER_TYPE_COSA 11;VM_DEBUGGER_TYPE_CDCSerialClass 12;VM_DEBUGGER_TYPE_HARDWARESERIAL1 13;VM_DEBUGGER_TYPE_HARDWARESERIAL2 14;VM_DEBUGGER_TYPE_HARDWARESERIAL3 15;VM_DEBUGGER_TYPE_NET_UDP 16;VM_DEBUGGER_TYPE_USBAPI 17;VM_DEBUGGER_TYPE VM_DEBUGGER_TYPE_CDCSerialClass;VM_DEBUG_BREAKPAUSE;" IncludesDebug="1" IsCompiled="1" />
     <Platform Name="arduino16x" Package="Intel" Platform="arc32" Architecture="1.6.9+1.0.1">
-      <Board Name="Intel_intel_arc32_arduino_101" Description="Arduino/Genuino 101" CoreFolder="C:\Users\Anthony Brown\AppData\Local\arduino15\packages\Intel\hardware\arc32\1.0.7\cores\arduino" VariantFullPath="C:\Users\Anthony Brown\AppData\Local\arduino15\packages\Intel\hardware\arc32\1.0.7\variants\arduino_101" McuIdePath="C:\Program Files (x86)\Arduino" McuSketchBookPath="C:\Users\Anthony Brown\Documents\Arduino" name="Arduino/Genuino 101" vid.0="0x8087" pid.0="0x0AB6" vid.0x2A03.warning="Uncertified" upload.tool="arduino101load" upload.protocol="script" upload.maximum_size="155648" upload.use_1200bps_touch="true" upload.wait_for_upload_port="false" upload.native_usb="false" upload.params.quiet="-q" upload.params.verbose="-q" build.usb_product="&quot;Arduino 101&quot;" build.mcu="ARCv2EM" build.f_cpu="32000000L" build.board="ARC32_TOOLS" build.core="arduino" build.ldscript="linker_scripts/flash.ld" build.variant="arduino_101" build.variant_system_lib="arc32drv_arduino101" build.vid="0x8087" build.pid="0x0AB6" bootloader.tool="arduino101load" runtime.ide.path="C:\Program Files (x86)\Arduino" runtime.os="windows" build.system.path="C:\Users\Anthony Brown\AppData\Local\arduino15\packages\Intel\hardware\arc32\1.0.7\system" runtime.ide.version="10801" target_package="Intel" target_platform="arc32" runtime.hardware.path="C:\Users\Anthony Brown\AppData\Local\arduino15\packages\Intel\hardware\arc32" originalid="intel_arc32_arduino_101" upload.8dot3="false" version="1.0.7" compiler.prefix="arc-elf32" compiler.path="{runtime.tools.arc-elf32.path}/bin/" compiler.c.cmd="arc-elf32-gcc" compiler.c.flags="-c -std=gnu11 -mcpu=quarkse_em -mlittle-endian -g -Os -Wall -fno-reorder-functions -fno-asynchronous-unwind-tables -fno-omit-frame-pointer -fno-defer-pop -Wno-unused-but-set-variable -Wno-main -ffreestanding -fno-stack-protector -mno-sdata -ffunction-sections -fdata-sections -fsigned-char -MMD -D__ARDUINO_ARC__" compiler.c.elf.cmd="arc-elf32-gcc" compiler.c.elf.flags="-nostartfiles -nodefaultlibs -nostdlib -static -Wl,-X -Wl,-N -Wl,-mcpu=quarkse_em -Wl,-marcelf -Wl,--gc-sections" compiler.S.flags="-c -g -x assembler-with-cpp" compiler.cpp.cmd="arc-elf32-g++" compiler.cpp.flags="-c -mcpu=quarkse_em -mlittle-endian -g -Os -Wall -fno-reorder-functions -fno-asynchronous-unwind-tables -fno-omit-frame-pointer -fno-defer-pop -Wno-unused-but-set-variable -Wno-main -ffreestanding -fno-stack-protector -mno-sdata -ffunction-sections -fdata-sections -fsigned-char -MMD -fno-rtti -fno-exceptions -D__ARDUINO_ARC__ -std=c++11" compiler.ar.cmd="arc-elf32-ar" compiler.ar.flags="rcs" compiler.objcopy.cmd="arc-elf32-objcopy" compiler.objcopy.eep.flags="-O ihex" compiler.elf2hex.flags="-S -O ihex -R .note -R .comment -R COMMON -R .eh_frame" compiler.elf2hex.cmd="arc-elf32-objcopy" compiler.elf2bin.flags="-S -O binary -R .note -R .comment -R COMMON -R .eh_frame" compiler.elf2bin.cmd="arc-elf32-objcopy" compiler.ldflags="" compiler.size.cmd="arc-elf32-size" compiler.define="-DARDUINO=" compiler.strip.cmd="{compiler.prefix}-strip" build.extra_flags="" compiler.c.extra_flags="-D__CPU_ARC__ -DCLOCK_SPEED=32 -DCONFIG_SOC_GPIO_32 -DCONFIG_SOC_GPIO_AON -DINFRA_MULTI_CPU_SUPPORT -DCFW_MULTI_CPU_SUPPORT -DHAS_SHARED_MEM &quot;-I{build.system.path}/libarc32_arduino101/common&quot; &quot;-I{build.system.path}/libarc32_arduino101/drivers&quot; &quot;-I{build.system.path}/libarc32_arduino101/bootcode&quot; &quot;-I{build.system.path}/libarc32_arduino101/framework/include&quot;" compiler.c.elf.extra_flags="" compiler.cpp.extra_flags="-D__CPU_ARC__ -DCLOCK_SPEED=32 -DCONFIG_SOC_GPIO_32 -DCONFIG_SOC_GPIO_AON -DINFRA_MULTI_CPU_SUPPORT -DCFW_MULTI_CPU_SUPPORT -DHAS_SHARED_MEM &quot;-I{build.system.path}/libarc32_arduino101/common&quot; &quot;-I{build.system.path}/libarc32_arduino101/drivers&quot; &quot;-I{build.system.path}/libarc32_arduino101/bootcode&quot; &quot;-I{build.system.path}/libarc32_arduino101/framework/include&quot;" compiler.ar.extra_flags="" compiler.elf2hex.extra_flags="" build.usb_flags="-DUSB_VID={build.vid} -DUSB_PID={build.pid} -DUSBCON '-DUSB_MANUFACTURER={build.usb_manufacturer}' '-DUSB_PRODUCT={build.usb_product}'" build.usb_manufacturer="&quot;Unknown&quot;" recipe.c.o.pattern="&quot;{compiler.path}{compiler.c.cmd}&quot; {compiler.c.flags} -DF_CPU={build.f_cpu} -DARDUINO={runtime.ide.version} -DARDUINO_{build.board} -DARDUINO_ARCH_{build.arch} {compiler.c.extra_flags} {build.extra_flags} {includes} &quot;{source_file}&quot; -o &quot;{object_file}&quot;" recipe.cpp.o.pattern="&quot;{compiler.path}{compiler.cpp.cmd}&quot; {compiler.cpp.flags} -DF_CPU={build.f_cpu} -DARDUINO={runtime.ide.version} -DARDUINO_{build.board} -DARDUINO_ARCH_{build.arch} {compiler.cpp.extra_flags} {build.extra_flags} {includes} &quot;{source_file}&quot; -o &quot;{object_file}&quot;" recipe.ar.pattern="&quot;{compiler.path}{compiler.ar.cmd}&quot; {compiler.ar.flags} {compiler.ar.extra_flags} &quot;{archive_file_path}&quot; &quot;{object_file}&quot;" recipe.c.combine.pattern="&quot;{compiler.path}{compiler.c.elf.cmd}&quot; {compiler.c.elf.flags} &quot;-T{build.variant.path}/{build.ldscript}&quot; &quot;-Wl,-Map,{build.path}/{build.project_name}.map&quot; {compiler.c.elf.extra_flags} -o &quot;{build.path}/{build.project_name}.elf&quot; &quot;-L{build.path}&quot; &quot;-L{build.variant.path}&quot; -Wl,--whole-archive &quot;-l{build.variant_system_lib}&quot; -Wl,--no-whole-archive -Wl,--start-group &quot;-l{build.variant_system_lib}&quot; -lnsim -lc -lm -lgcc {object_files} &quot;{build.path}/{archive_file}&quot;" recipe.hooks.objcopy.preobjcopy.1.pattern="cmd /C copy /y &quot;{build.path}\{build.project_name}.elf&quot; &quot;{build.path}\..\arduino101_sketch.debug.elf&quot;" recipe.hooks.objcopy.preobjcopy.1.pattern.windows="cmd /C copy /y &quot;{build.path}\{build.project_name}.elf&quot; &quot;{build.path}\..\arduino101_sketch.debug.elf&quot;" recipe.objcopy.bin.pattern="&quot;{compiler.path}{compiler.elf2bin.cmd}&quot; {compiler.elf2bin.flags} {compiler.elf2hex.extra_flags} &quot;{build.path}/{build.project_name}.elf&quot; &quot;{build.path}/{build.project_name}.bin&quot;" recipe.objcopy.eep.pattern="&quot;{compiler.path}{compiler.strip.cmd}&quot; &quot;{build.path}/{build.project_name}.elf&quot;" recipe.objcopy.hex.pattern="&quot;{compiler.path}{compiler.elf2hex.cmd}&quot; {compiler.elf2hex.flags} {compiler.elf2hex.extra_flags} &quot;{build.path}/{build.project_name}.elf&quot; &quot;{build.path}/{build.project_name}.hex&quot;" recipe.output.tmp_file="{build.project_name}.hex" recipe.output.save_file="{build.project_name}.{build.variant}.hex" recipe.size.pattern="&quot;{compiler.path}{compiler.size.cmd}&quot; -A &quot;{build.path}/{build.project_name}.elf&quot;" recipe.size.regex="^(?:text|ctors|rodata|datas)\s+([0-9]+).*" tools.arduino101load.ble.fw.string="&quot;ATP1BLE000-1541C5635&quot;" tools.arduino101load.ble.fw.position="141312" tools.arduino101load.cmd.path="{runtime.tools.arduino101load.path}/arduino101load/arduino101load" tools.arduino101load.upload.params.verbose="verbose" tools.arduino101load.upload.params.quiet="quiet" tools.arduino101load.upload.pattern="&quot;{cmd.path}&quot; &quot;{runtime.tools.arduino101load.path}/x86/bin&quot; {build.path}/{build.project_name}.bin {serial.port} &quot;{upload.verbose}&quot; {ble.fw.string} {ble.fw.position}" tools.arduino101load.erase.params.verbose="" tools.arduino101load.erase.params.quiet="" tools.arduino101load.erase.pattern="" tools.arduino101load.bootloader.params.verbose="" tools.arduino101load.bootloader.params.quiet="" tools.arduino101load.bootloader.pattern="{runtime.tools.flashpack.path}/flash_dfu.bat" tools.arduino101load.bootloader.pattern.windows="{runtime.tools.flashpack.path}/flash_dfu.bat" vm.platform.root.path="C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\h0kowv1g.rel\Micro Platforms\arduino16x" arduino101fw.name="Arduino/Genuino 101 Firmware Updater" arduino101fw.communication="USB" arduino101fw.protocol="" arduino101fw.program.protocol="" arduino101fw.program.tool="arduino101load" arduino101fw.program.extra_params="" runtime.tools.sketchUploader.path="C:\Users\Anthony Brown\AppData\Local\arduino15\packages\Intel\tools\sketchUploader\1.6.2+1.0" runtime.tools.core2-32-poky-linux.path="C:\Users\Anthony Brown\AppData\Local\arduino15\packages\Intel\tools\core2-32-poky-linux\1.6.2+1.0" runtime.tools.arc-elf32.path="C:\Users\Anthony Brown\AppData\Local\arduino15\packages\Intel\tools\arc-elf32\1.6.9+1.0.1" runtime.tools.arduino101load.path="C:\Users\Anthony Brown\AppData\Local\arduino15\packages\Intel\tools\arduino101load\1.6.9+1.28" runtime.tools.openocd.path="C:\Users\Anthony Brown\AppData\Local\arduino15\packages\Intel\tools\openocd\0.9.0+0.1" runtime.tools.flashpack.path="C:\Users\Anthony Brown\AppData\Local\arduino15\packages\Intel\tools\flashpack\1.0.0" runtime.tools.flashpack-1.0.0.path="C:\Users\Anthony Brown\AppData\Local\arduino15\packages\Intel\tools\flashpack\1.0.0" runtime.tools.arduinoOTA.path="C:\Program Files (x86)\Arduino\hardware\tools\avr" runtime.tools.arduinoOTA-1.0.0.path="C:\Program Files (x86)\Arduino\hardware\tools\avr" runtime.tools.avrdude.path="C:\Program Files (x86)\Arduino\hardware\tools\avr" runtime.tools.avrdude-6.3.0-arduino8.path="C:\Program Files (x86)\Arduino\hardware\tools\avr" runtime.tools.avr-gcc.path="C:\Program Files (x86)\Arduino\hardware\tools\avr" runtime.tools.avr-gcc-4.9.2-atmel3.5.3-arduino2.path="C:\Program Files (x86)\Arduino\hardware\tools\avr" runtime.tools.tools-avr.path="C:\Program Files (x86)\Arduino\hardware\tools\avr" runtime.vm.boardinfo.id="Intel_intel_arc32_arduino_101" runtime.vm.boardinfo.name="Intel_intel_arc32_arduino_101" runtime.vm.boardinfo.desc="Arduino/Genuino 101" runtime.vm.boardinfo.src_location="C:\Users\Anthony Brown\AppData\Local\arduino15\packages\Intel\hardware\arc32\1.0.7" ide.hint="For all platforms that use Board Manager" ide.location.key="Arduino16x" ide.location.ide.winreg="Arduino 1.6.x Application" ide.location.sketchbook.winreg="Arduino 1.6.x Sketchbook" ide.location.sketchbook.preferences="sketchbook.path" ide.default.revision_name="1.8.0" ide.default.version="10800" ide.default.package="arduino" ide.default.platform="avr" ide.multiplatform="true" ide.includes="arduino.h" ide.exe_name="arduino" ide.platformswithoutpackage="false" ide.includes.fallback="wprogram.h" ide.extension="ino" ide.extension.fallback="pde" ide.versionGTEQ="160" ide.exe="arduino.exe" ide.hosts="atmel" ide.url="http://arduino.cc/en/Main/Software" ide.help.reference.path="reference" ide.help.reference.path2="reference\www.arduino.cc\en\Reference" ide.help.reference.serial="reference\www.arduino.cc\en\Serial" vm.debug="true" software="ARDUINO" ssh.user.name="root" ssh.user.default.password="arduino" ssh.host.wwwfiles.path="/www/sd" build.working_directory="{runtime.ide.path}\java\bin" ide.location.preferences.portable="{runtime.ide.path}\portable" ide.location.preferences.arduinoData="{runtime.sketchbook.path}\ArduinoData" ide.location.preferences="%VM_APPDATA_LOCAL%\arduino15\preferences.txt" ide.location.preferences_fallback="%VM_APPDATA_ROAMING%\arduino15\preferences.txt" ide.location.contributions="%VM_APPDATA_LOCAL%\arduino15" ide.location.contributions_fallback="%VM_APPDATA_ROAMING%\arduino15" ide.contributions.boards.allow="true" ide.contributions.boards.ignore_unless_rewrite_found="true" ide.contributions.libraries.allow="true" ide.contributions.boards.support.urls.wiki="https://github.com/arduino/Arduino/wiki/Unofficial-list-of-3rd-party-boards-support-urls" ide.create_platforms_from_boardsTXT.teensy="build.core" ide.appid="arduino16x" location.sketchbook="C:\Users\Anthony Brown\Documents\Arduino" build.core.vmresolved="C:\Users\Anthony Brown\AppData\Local\arduino15\packages\Intel\hardware\arc32\1.0.7\cores\arduino" build.core.parentfolder.vmresolved="C:\Users\Anthony Brown\AppData\Local\arduino15\packages\Intel\hardware\arc32\1.0.7\cores" build.core.coresparentfolder.vmresolved="C:\Users\Anthony Brown\AppData\Local\arduino15\packages\Intel\hardware\arc32\1.0.7" build.core.path="C:\Users\Anthony Brown\AppData\Local\arduino15\packages\Intel\hardware\arc32\1.0.7\cores\arduino" vm.core.include="arduino.h" vm.boardsource.path="C:\Users\Anthony Brown\AppData\Local\arduino15\packages\Intel\hardware\arc32\1.0.7" runtime.platform.path="C:\Users\Anthony Brown\AppData\Local\arduino15\packages\Intel\hardware\arc32\1.0.7" vm.platformname.name="arc32" build.arch="ARC32" builder.noino="false" build.architecture="1.6.9+1.0.1" vmresolved.compiler.path="C:\Users\Anthony Brown\AppData\Local\arduino15\packages\Intel\tools\arc-elf32\1.6.9+1.0.1\bin\" vmresolved.tools.path="C:\Users\Anthony Brown\AppData\Local\arduino15\packages\Intel\tools\arc-elf32\1.6.9+1.0.1" build.variant.vmresolved="C:\Users\Anthony Brown\AppData\Local\arduino15\packages\Intel\hardware\arc32\1.0.7\variants\arduino_101" build.path="C:\Users\Anthony Brown\AppData\Local\Temp\VMBuilds\Bincode\Intel_intel_arc32_arduino_101\Debug" build.project_name="Bincode.ino" build.project_path="C:\Users\Anthony Brown\Source\Repos\Smart personality bin\Bincode\Bincode" ProjectDir="C:\Users\Anthony Brown\Source\Repos\Smart personality bin\Bincode\Bincode\" vm.runtime.compiler.showwarnings="false" vm.runtime.upload.verbose="true" vm.runtime.upload.verify="false" serial.port.file="COM2" serial.port="COM2" serial.port.num="2" serial.port.caption="COM2   - Arduino 101 Serial Monitor" serial.Caption="Arduino 101 Serial Monitor (COM2)" serial.ClassGuid="{4d36e978-e325-11ce-bfc1-08002be10318}" serial.CompatibleID.value0="USB\Class_02" serial.ConfigManagerErrorCode="0" serial.ConfigManagerUserConfig="False" serial.CreationClassName="Win32_PnPEntity" serial.Description="Arduino 101 Serial Monitor" serial.DeviceID="USB\VID_8087&amp;PID_0AB6\AE0417EK624030K" serial.HardwareID.value0="USB\VID_8087&amp;PID_0AB6" serial.Manufacturer="http://www.intel.com" serial.Name="Arduino 101 Serial Monitor (COM2)" serial.PNPClass="Ports" serial.PNPDeviceID="USB\VID_8087&amp;PID_0AB6\AE0417EK624030K" serial.Present="True" serial.Service="usbser" serial.Status="OK" serial.SystemCreationClassName="Win32_ComputerSystem" serial.SystemName="ANTHONY-BROWN" serial.vid="0x8087" serial.pid="0x0AB6" serial.iserial="AE0417EK624030K" serial.port.iserial="AE0417EK624030K" vm.runtime.compiler.auto_discover_includes="true" vm.runtime.compiler.auto_discover_includes_cache="true" build.vm.build.vmdebug="1" build.vm.build.isgdb="0" build.vm.build.optimised="1" vm.last.buildpath="C:\Users\Anthony Brown\AppData\Local\Temp\VMBuilds\Bincode\Intel_intel_arc32_arduino_101\Debug" />
+      <Board Name="Intel_intel_arc32_arduino_101" Description="Arduino/Genuino 101" CoreFolder="C:\Users\abbro\AppData\Local\arduino15\packages\Intel\hardware\arc32\1.0.7\cores\arduino" VariantFullPath="C:\Users\abbro\AppData\Local\arduino15\packages\Intel\hardware\arc32\1.0.7\variants\arduino_101" McuIdePath="C:\Program Files (x86)\Arduino" McuSketchBookPath="C:\Users\abbro\Documents\Arduino" name="Arduino/Genuino 101" vid.0="0x8087" pid.0="0x0AB6" vid.0x2A03.warning="Uncertified" upload.tool="arduino101load" upload.protocol="script" upload.maximum_size="155648" upload.use_1200bps_touch="true" upload.wait_for_upload_port="false" upload.native_usb="false" upload.params.quiet="-q" upload.params.verbose="-q" build.usb_product="&quot;Arduino 101&quot;" build.mcu="ARCv2EM" build.f_cpu="32000000L" build.board="ARC32_TOOLS" build.core="arduino" build.ldscript="linker_scripts/flash.ld" build.variant="arduino_101" build.variant_system_lib="arc32drv_arduino101" build.vid="0x8087" build.pid="0x0AB6" bootloader.tool="arduino101load" runtime.ide.path="C:\Program Files (x86)\Arduino" runtime.os="windows" build.system.path="C:\Users\abbro\AppData\Local\arduino15\packages\Intel\hardware\arc32\1.0.7\system" runtime.ide.version="10801" target_package="Intel" target_platform="arc32" runtime.hardware.path="C:\Users\abbro\AppData\Local\arduino15\packages\Intel\hardware\arc32" originalid="intel_arc32_arduino_101" upload.8dot3="false" version="1.0.7" compiler.prefix="arc-elf32" compiler.path="{runtime.tools.arc-elf32.path}/bin/" compiler.c.cmd="arc-elf32-gcc" compiler.c.flags="-c -std=gnu11 -mcpu=quarkse_em -mlittle-endian -g -Os -Wall -fno-reorder-functions -fno-asynchronous-unwind-tables -fno-omit-frame-pointer -fno-defer-pop -Wno-unused-but-set-variable -Wno-main -ffreestanding -fno-stack-protector -mno-sdata -ffunction-sections -fdata-sections -fsigned-char -MMD -D__ARDUINO_ARC__" compiler.c.elf.cmd="arc-elf32-gcc" compiler.c.elf.flags="-nostartfiles -nodefaultlibs -nostdlib -static -Wl,-X -Wl,-N -Wl,-mcpu=quarkse_em -Wl,-marcelf -Wl,--gc-sections" compiler.S.flags="-c -g -x assembler-with-cpp" compiler.cpp.cmd="arc-elf32-g++" compiler.cpp.flags="-c -mcpu=quarkse_em -mlittle-endian -g -Os -Wall -fno-reorder-functions -fno-asynchronous-unwind-tables -fno-omit-frame-pointer -fno-defer-pop -Wno-unused-but-set-variable -Wno-main -ffreestanding -fno-stack-protector -mno-sdata -ffunction-sections -fdata-sections -fsigned-char -MMD -fno-rtti -fno-exceptions -D__ARDUINO_ARC__ -std=c++11" compiler.ar.cmd="arc-elf32-ar" compiler.ar.flags="rcs" compiler.objcopy.cmd="arc-elf32-objcopy" compiler.objcopy.eep.flags="-O ihex" compiler.elf2hex.flags="-S -O ihex -R .note -R .comment -R COMMON -R .eh_frame" compiler.elf2hex.cmd="arc-elf32-objcopy" compiler.elf2bin.flags="-S -O binary -R .note -R .comment -R COMMON -R .eh_frame" compiler.elf2bin.cmd="arc-elf32-objcopy" compiler.ldflags="" compiler.size.cmd="arc-elf32-size" compiler.define="-DARDUINO=" compiler.strip.cmd="{compiler.prefix}-strip" build.extra_flags="" compiler.c.extra_flags="-D__CPU_ARC__ -DCLOCK_SPEED=32 -DCONFIG_SOC_GPIO_32 -DCONFIG_SOC_GPIO_AON -DINFRA_MULTI_CPU_SUPPORT -DCFW_MULTI_CPU_SUPPORT -DHAS_SHARED_MEM &quot;-I{build.system.path}/libarc32_arduino101/common&quot; &quot;-I{build.system.path}/libarc32_arduino101/drivers&quot; &quot;-I{build.system.path}/libarc32_arduino101/bootcode&quot; &quot;-I{build.system.path}/libarc32_arduino101/framework/include&quot;" compiler.c.elf.extra_flags="" compiler.cpp.extra_flags="-D__CPU_ARC__ -DCLOCK_SPEED=32 -DCONFIG_SOC_GPIO_32 -DCONFIG_SOC_GPIO_AON -DINFRA_MULTI_CPU_SUPPORT -DCFW_MULTI_CPU_SUPPORT -DHAS_SHARED_MEM &quot;-I{build.system.path}/libarc32_arduino101/common&quot; &quot;-I{build.system.path}/libarc32_arduino101/drivers&quot; &quot;-I{build.system.path}/libarc32_arduino101/bootcode&quot; &quot;-I{build.system.path}/libarc32_arduino101/framework/include&quot;" compiler.ar.extra_flags="" compiler.elf2hex.extra_flags="" build.usb_flags="-DUSB_VID={build.vid} -DUSB_PID={build.pid} -DUSBCON '-DUSB_MANUFACTURER={build.usb_manufacturer}' '-DUSB_PRODUCT={build.usb_product}'" build.usb_manufacturer="&quot;Unknown&quot;" recipe.c.o.pattern="&quot;{compiler.path}{compiler.c.cmd}&quot; {compiler.c.flags} -DF_CPU={build.f_cpu} -DARDUINO={runtime.ide.version} -DARDUINO_{build.board} -DARDUINO_ARCH_{build.arch} {compiler.c.extra_flags} {build.extra_flags} {includes} &quot;{source_file}&quot; -o &quot;{object_file}&quot;" recipe.cpp.o.pattern="&quot;{compiler.path}{compiler.cpp.cmd}&quot; {compiler.cpp.flags} -DF_CPU={build.f_cpu} -DARDUINO={runtime.ide.version} -DARDUINO_{build.board} -DARDUINO_ARCH_{build.arch} {compiler.cpp.extra_flags} {build.extra_flags} {includes} &quot;{source_file}&quot; -o &quot;{object_file}&quot;" recipe.ar.pattern="&quot;{compiler.path}{compiler.ar.cmd}&quot; {compiler.ar.flags} {compiler.ar.extra_flags} &quot;{archive_file_path}&quot; &quot;{object_file}&quot;" recipe.c.combine.pattern="&quot;{compiler.path}{compiler.c.elf.cmd}&quot; {compiler.c.elf.flags} &quot;-T{build.variant.path}/{build.ldscript}&quot; &quot;-Wl,-Map,{build.path}/{build.project_name}.map&quot; {compiler.c.elf.extra_flags} -o &quot;{build.path}/{build.project_name}.elf&quot; &quot;-L{build.path}&quot; &quot;-L{build.variant.path}&quot; -Wl,--whole-archive &quot;-l{build.variant_system_lib}&quot; -Wl,--no-whole-archive -Wl,--start-group &quot;-l{build.variant_system_lib}&quot; -lnsim -lc -lm -lgcc {object_files} &quot;{build.path}/{archive_file}&quot;" recipe.hooks.objcopy.preobjcopy.1.pattern="cmd /C copy /y &quot;{build.path}\{build.project_name}.elf&quot; &quot;{build.path}\..\arduino101_sketch.debug.elf&quot;" recipe.hooks.objcopy.preobjcopy.1.pattern.windows="cmd /C copy /y &quot;{build.path}\{build.project_name}.elf&quot; &quot;{build.path}\..\arduino101_sketch.debug.elf&quot;" recipe.objcopy.bin.pattern="&quot;{compiler.path}{compiler.elf2bin.cmd}&quot; {compiler.elf2bin.flags} {compiler.elf2hex.extra_flags} &quot;{build.path}/{build.project_name}.elf&quot; &quot;{build.path}/{build.project_name}.bin&quot;" recipe.objcopy.eep.pattern="&quot;{compiler.path}{compiler.strip.cmd}&quot; &quot;{build.path}/{build.project_name}.elf&quot;" recipe.objcopy.hex.pattern="&quot;{compiler.path}{compiler.elf2hex.cmd}&quot; {compiler.elf2hex.flags} {compiler.elf2hex.extra_flags} &quot;{build.path}/{build.project_name}.elf&quot; &quot;{build.path}/{build.project_name}.hex&quot;" recipe.output.tmp_file="{build.project_name}.hex" recipe.output.save_file="{build.project_name}.{build.variant}.hex" recipe.size.pattern="&quot;{compiler.path}{compiler.size.cmd}&quot; -A &quot;{build.path}/{build.project_name}.elf&quot;" recipe.size.regex="^(?:text|ctors|rodata|datas)\s+([0-9]+).*" tools.arduino101load.ble.fw.string="&quot;ATP1BLE000-1541C5635&quot;" tools.arduino101load.ble.fw.position="141312" tools.arduino101load.cmd.path="{runtime.tools.arduino101load.path}/arduino101load/arduino101load" tools.arduino101load.upload.params.verbose="verbose" tools.arduino101load.upload.params.quiet="quiet" tools.arduino101load.upload.pattern="&quot;{cmd.path}&quot; &quot;{runtime.tools.arduino101load.path}/x86/bin&quot; {build.path}/{build.project_name}.bin {serial.port} &quot;{upload.verbose}&quot; {ble.fw.string} {ble.fw.position}" tools.arduino101load.erase.params.verbose="" tools.arduino101load.erase.params.quiet="" tools.arduino101load.erase.pattern="" tools.arduino101load.bootloader.params.verbose="" tools.arduino101load.bootloader.params.quiet="" tools.arduino101load.bootloader.pattern="{runtime.tools.flashpack.path}/flash_dfu.bat" tools.arduino101load.bootloader.pattern.windows="{runtime.tools.flashpack.path}/flash_dfu.bat" vm.platform.root.path="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\Extensions\bjgs31r1.33a\Micro Platforms\arduino16x" arduino101fw.name="Arduino/Genuino 101 Firmware Updater" arduino101fw.communication="USB" arduino101fw.protocol="" arduino101fw.program.protocol="" arduino101fw.program.tool="arduino101load" arduino101fw.program.extra_params="" runtime.tools.sketchUploader.path="C:\Users\abbro\AppData\Local\arduino15\packages\Intel\tools\sketchUploader\1.6.2+1.0" runtime.tools.core2-32-poky-linux.path="C:\Users\abbro\AppData\Local\arduino15\packages\Intel\tools\core2-32-poky-linux\1.6.2+1.0" runtime.tools.arc-elf32.path="C:\Users\abbro\AppData\Local\arduino15\packages\Intel\tools\arc-elf32\1.6.9+1.0.1" runtime.tools.arduino101load.path="C:\Users\abbro\AppData\Local\arduino15\packages\Intel\tools\arduino101load\1.6.9+1.28" runtime.tools.openocd.path="C:\Users\abbro\AppData\Local\arduino15\packages\Intel\tools\openocd\0.9.0+0.1" runtime.tools.flashpack.path="C:\Users\abbro\AppData\Local\arduino15\packages\Intel\tools\flashpack\1.0.0" runtime.tools.flashpack-1.0.0.path="C:\Users\abbro\AppData\Local\arduino15\packages\Intel\tools\flashpack\1.0.0" runtime.tools.arduinoOTA.path="C:\Program Files (x86)\Arduino\hardware\tools\avr" runtime.tools.arduinoOTA-1.0.0.path="C:\Program Files (x86)\Arduino\hardware\tools\avr" runtime.tools.avrdude.path="C:\Program Files (x86)\Arduino\hardware\tools\avr" runtime.tools.avrdude-6.3.0-arduino8.path="C:\Program Files (x86)\Arduino\hardware\tools\avr" runtime.tools.avr-gcc.path="C:\Program Files (x86)\Arduino\hardware\tools\avr" runtime.tools.avr-gcc-4.9.2-atmel3.5.3-arduino2.path="C:\Program Files (x86)\Arduino\hardware\tools\avr" runtime.tools.tools-avr.path="C:\Program Files (x86)\Arduino\hardware\tools\avr" runtime.vm.boardinfo.id="Intel_intel_arc32_arduino_101" runtime.vm.boardinfo.name="Intel_intel_arc32_arduino_101" runtime.vm.boardinfo.desc="Arduino/Genuino 101" runtime.vm.boardinfo.src_location="C:\Users\abbro\AppData\Local\arduino15\packages\Intel\hardware\arc32\1.0.7" ide.hint="Use installed IDE. Provides built-in hardware, reference/help and libraries." ide.location.key="Arduino16x" ide.location.ide.winreg="Arduino 1.6.x Application" ide.location.sketchbook.winreg="Arduino 1.6.x Sketchbook" ide.location.sketchbook.preferences="sketchbook.path" ide.default.revision_name="1.8.0" ide.default.version="10800" ide.default.package="arduino" ide.default.platform="avr" ide.multiplatform="true" ide.includes="arduino.h" ide.exe_name="arduino" ide.platformswithoutpackage="false" ide.includes.fallback="wprogram.h" ide.extension="ino" ide.extension.fallback="pde" ide.versionGTEQ="160" ide.exe="arduino.exe" ide.hosts="atmel" ide.url="http://arduino.cc/en/Main/Software" ide.help.reference.path="reference" ide.help.reference.path2="reference\www.arduino.cc\en\Reference" ide.help.reference.serial="reference\www.arduino.cc\en\Serial" vm.debug="true" software="ARDUINO" ssh.user.name="root" ssh.user.default.password="arduino" ssh.host.wwwfiles.path="/www/sd" build.working_directory="{runtime.ide.path}\java\bin" ide.location.preferences.portable="{runtime.ide.path}\portable" ide.location.preferences.arduinoData="{runtime.sketchbook.path}\ArduinoData" ide.location.preferences="%VM_APPDATA_LOCAL%\arduino15\preferences.txt" ide.location.preferences_fallback="%VM_APPDATA_ROAMING%\arduino15\preferences.txt" ide.location.contributions="%VM_APPDATA_LOCAL%\arduino15" ide.location.contributions_fallback="%VM_APPDATA_ROAMING%\arduino15" ide.contributions.boards.allow="true" ide.contributions.boards.ignore_unless_rewrite_found="true" ide.contributions.libraries.allow="true" ide.contributions.boards.support.urls.wiki="https://github.com/arduino/Arduino/wiki/Unofficial-list-of-3rd-party-boards-support-urls" ide.create_platforms_from_boardsTXT.teensy="build.core" ide.appid="arduino16x" location.sketchbook="C:\Users\abbro\Documents\Arduino" build.core.vmresolved="C:\Users\abbro\AppData\Local\arduino15\packages\Intel\hardware\arc32\1.0.7\cores\arduino" build.core.parentfolder.vmresolved="C:\Users\abbro\AppData\Local\arduino15\packages\Intel\hardware\arc32\1.0.7\cores" build.core.coresparentfolder.vmresolved="C:\Users\abbro\AppData\Local\arduino15\packages\Intel\hardware\arc32\1.0.7" build.core.path="C:\Users\abbro\AppData\Local\arduino15\packages\Intel\hardware\arc32\1.0.7\cores\arduino" vm.core.include="arduino.h" vm.boardsource.path="C:\Users\abbro\AppData\Local\arduino15\packages\Intel\hardware\arc32\1.0.7" runtime.platform.path="C:\Users\abbro\AppData\Local\arduino15\packages\Intel\hardware\arc32\1.0.7" vm.platformname.name="arc32" build.arch="ARC32" builder.noino="false" build.architecture="1.6.9+1.0.1" vmresolved.compiler.path="C:\Users\abbro\AppData\Local\arduino15\packages\Intel\tools\arc-elf32\1.6.9+1.0.1\bin\" vmresolved.tools.path="C:\Users\abbro\AppData\Local\arduino15\packages\Intel\tools\arc-elf32\1.6.9+1.0.1" build.variant.vmresolved="C:\Users\abbro\AppData\Local\arduino15\packages\Intel\hardware\arc32\1.0.7\variants\arduino_101" build.path="C:\Users\abbro\AppData\Local\Temp\VMBuilds\Bincode\Intel_intel_arc32_arduino_101\Debug" build.project_name="Bincode.ino" build.project_path="C:\Users\abbro\Source\Repos\Smart personality bin\Bincode\Bincode" ProjectDir="C:\Users\abbro\Source\Repos\Smart personality bin\Bincode\Bincode\" vm.runtime.compiler.showwarnings="false" vm.runtime.upload.verbose="false" vm.runtime.upload.verify="false" serial.port.file="COM6" serial.port="COM6" serial.port.num="6" serial.port.caption="COM6   - Arduino 101 Serial Monitor" serial.Caption="Arduino 101 Serial Monitor (COM6)" serial.ClassGuid="{4d36e978-e325-11ce-bfc1-08002be10318}" serial.CompatibleID.value0="USB\Class_02" serial.ConfigManagerErrorCode="0" serial.ConfigManagerUserConfig="False" serial.CreationClassName="Win32_PnPEntity" serial.Description="Arduino 101 Serial Monitor" serial.DeviceID="USB\VID_8087&amp;PID_0AB6\AE0417EK624030K" serial.HardwareID.value0="USB\VID_8087&amp;PID_0AB6" serial.Manufacturer="http://www.intel.com" serial.Name="Arduino 101 Serial Monitor (COM6)" serial.PNPClass="Ports" serial.PNPDeviceID="USB\VID_8087&amp;PID_0AB6\AE0417EK624030K" serial.Present="True" serial.Service="usbser" serial.Status="OK" serial.SystemCreationClassName="Win32_ComputerSystem" serial.SystemName="ANTHONY-BROWN" serial.vid="0x8087" serial.pid="0x0AB6" serial.iserial="AE0417EK624030K" serial.port.iserial="AE0417EK624030K" vm.runtime.compiler.auto_discover_includes="true" vm.runtime.compiler.auto_discover_includes_cache="true" build.vm.build.vmdebug="1" build.vm.build.isgdb="0" build.vm.build.optimised="1" vm.last.buildpath="C:\Users\abbro\AppData\Local\Temp\VMBuilds\Bincode\Intel_intel_arc32_arduino_101\Debug" />
     </Platform>
-    <Debug EnableBreak="1" DebugEnabled="1" InBreakLiveView="1" PerfStats="0" IsGdb="0" RemotePortSpeedWrittenToDebugSource="115200" />
+    <Debug EnableBreak="1" DebugEnabled="1" InBreakLiveView="1" PerfStats="1" IsGdb="0" RemotePortSpeedWrittenToDebugSource="115200" />
     <VCCodeModel>
       <VCCodeMacros />
     </VCCodeModel>
     <BreakPoints>
-      <BreakPoint Index="1" Name="Bincode.ino, line 606" Id="83a23fe3-811d-418e-81a7-63c8ebd55197" Enabled="1" Message="{millis()}{digitalRead(PIRpin)}{digitalRead(throwPIR)}{motion}{throwin}{approached}{pass_count}" MessageTextType="2" PreProcessedMessage="{0}{1}{2}{3}{4}{5}{6}" Condition="" ConditionType="1" CurrentHits="0" File="c:\users\anthony brown\source\repos\smart personality bin\bincode\bincode\bincode.ino" FileLine="606" FileColumn="1" FunctionName="" FunctionLineOffset="1" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C++" LocationType="3" Tag="&lt;vmbp Id='83a23fe3-811d-418e-81a7-63c8ebd55197'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="0">
-        <Source>599		 panservo.attach(pan);
-600		 tiltservo.attach(tilt);
-601		 panservo.write(90);
-602		 tiltservo.write(deftilt);
-603		 delay(3000);
-604	 }
-605	 
---&gt;606	 void loop()
-607	 {
-608	
-609		 if (throwin)
-610		 {
-611			 throw_action();
-612		 }
-613		 if (motion)
-614		 {
-615			 motion_action();
+      <BreakPoint Index="1" Name="Bincode.ino, line 581" Id="44e09f07-b707-4439-99e5-0967da90ec07" Enabled="1" Message="{motion}{approached}{throwin}{digitalRead(PIRpin)}{digitalRead(throwPIR)}{millis()}" MessageTextType="2" PreProcessedMessage="{0}{1}{2}{3}{4}{5}" Condition="" ConditionType="1" CurrentHits="0" File="c:\users\abbro\source\repos\smart personality bin\bincode\bincode\bincode.ino" FileLine="581" FileColumn="1" FunctionName="" FunctionLineOffset="1" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C++" LocationType="3" Tag="&lt;vmbp Id='44e09f07-b707-4439-99e5-0967da90ec07'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="0">
+        <Source>574		 panservo.attach(pan);
+575		 tiltservo.attach(tilt);
+576		 panservo.write(90);
+577		 tiltservo.write(deftilt);
+578		 delay(3000);
+579	 }
+580	 
+--&gt;581	 void loop()
+582	 {
+583		 if (throwin)
+584		 {
+585			 throw_action();
+586		 }
+587		 if (motion &amp;&amp; !approached)
+588		 {
+589			 motion_action();
+590		 }
 </Source>
         <MessageVariables>
-          <MessageVariable Name="millis()" Index="1" />
-          <MessageVariable Name="digitalRead(PIRpin)" Index="2" />
-          <MessageVariable Name="digitalRead(throwPIR)" Index="3" />
-          <MessageVariable Name="motion" Index="4" />
-          <MessageVariable Name="throwin" Index="5" />
-          <MessageVariable Name="approached" Index="6" />
-          <MessageVariable Name="pass_count" Index="7" />
+          <MessageVariable Name="motion" Index="1" />
+          <MessageVariable Name="approached" Index="2" />
+          <MessageVariable Name="throwin" Index="3" />
+          <MessageVariable Name="digitalRead(PIRpin)" Index="4" />
+          <MessageVariable Name="digitalRead(throwPIR)" Index="5" />
+          <MessageVariable Name="millis()" Index="6" />
         </MessageVariables>
       </BreakPoint>
-      <BreakPoint Index="2" Name="Bincode.ino, line 496" Id="4a25477c-eb28-489a-a592-a45109068c52" Enabled="0" Message="{angle}{tanratio}" MessageTextType="2" PreProcessedMessage="{0}{1}" Condition="" ConditionType="1" CurrentHits="0" File="c:\users\anthony brown\source\repos\smart personality bin\bincode\bincode\bincode.ino" FileLine="496" FileColumn="1" FunctionName="looktomin (struct proxi_multi surround)" FunctionLineOffset="12" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C++" LocationType="3" Tag="&lt;vmbp Id='4a25477c-eb28-489a-a592-a45109068c52'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="0">
-        <Source>489			//double angle = atan(tanratio) * deginrad;
-490			eye_move(maxpan, 70, 10);					//look to the right
-491		}
-492		else if (surround.sensor == pingright)
-493		{
-494			//double tanratio = (avgheight-binheight) / surround.distance;	//get the tilt angle in degrees 
-495			//double angle = atan(tanratio) * deginrad;
---&gt;496			eye_move(minpan, 70, 10);						//look to the left
-497		}
-498		else
-499		{
-500			//double tanratio = (avgheight - binheight) / surround.distance;	//get the tilt angle in degrees 
-501			//double angle = atan(tanratio) * deginrad;
-502			eye_move(defpan, 70, 10);						//look straight ahead
-503		}
-504	}
-505	//This in an ISR called every time the the outer PIR detects motion after a period of inactivity.
+      <BreakPoint Index="2" Name="Bincode.ino, line 394" Id="679596ca-60bf-4e0a-b04e-b87cc548ecda" Enabled="0" Message="tiltdiff is greater, tilt+ve, pan+ve" MessageTextType="0" PreProcessedMessage="tiltdiff is greater, tilt+ve, pan+ve" Condition="" ConditionType="1" CurrentHits="0" File="c:\users\abbro\source\repos\smart personality bin\bincode\bincode\bincode.ino" FileLine="394" FileColumn="1" FunctionName="eye_move(int pan, int tilt, int speed = 0)" FunctionLineOffset="15" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C++" LocationType="3" Tag="&lt;vmbp Id='679596ca-60bf-4e0a-b04e-b87cc548ecda'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="0">
+        <Source>387		if (tiltdiff &gt;= pandiff)
+388		{
+389			double ratio = pandiff / tiltdiff;
+390			if (tilt &gt;= lasttilt)
+391			{
+392				if (pan &gt;= lastpan)
+393				{
+--&gt;394					for (t = lasttilt, p = lastpan; t &lt; tilt; t++, p += ratio)
+395					{
+396						tiltservo.write(t);
+397						panservo.write(p);
+398						delay(speed);
+399					}
+400				}
+401				else if (pan &lt; lastpan)
+402				{
+403					for (t = lasttilt, p = lastpan; t &lt; tilt; t++, p -= ratio)
+</Source>
+      </BreakPoint>
+      <BreakPoint Index="3" Name="Bincode.ino, line 403" Id="d0cc5098-45a3-4184-9993-7625852fe31b" Enabled="0" Message="tiltdiff is greater, tilt +ve ,pan -ve" MessageTextType="0" PreProcessedMessage="tiltdiff is greater, tilt +ve ,pan -ve" Condition="" ConditionType="1" CurrentHits="0" File="c:\users\abbro\source\repos\smart personality bin\bincode\bincode\bincode.ino" FileLine="403" FileColumn="1" FunctionName="eye_move(int pan, int tilt, int speed = 0)" FunctionLineOffset="24" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C++" LocationType="3" Tag="&lt;vmbp Id='d0cc5098-45a3-4184-9993-7625852fe31b'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="0">
+        <Source>396						tiltservo.write(t);
+397						panservo.write(p);
+398						delay(speed);
+399					}
+400				}
+401				else if (pan &lt; lastpan)
+402				{
+--&gt;403					for (t = lasttilt, p = lastpan; t &lt; tilt; t++, p -= ratio)
+404					{
+405						tiltservo.write(t);
+406						panservo.write(p);
+407						delay(speed);
+408					}
+409				}
+410			}
+411			else if (tilt &lt; lasttilt)
+412			{
+</Source>
+      </BreakPoint>
+      <BreakPoint Index="4" Name="Bincode.ino, line 415" Id="1adb0d60-b96a-4fed-941a-d7977460aa5d" Enabled="0" Message="tiltdiff is greater, tilt-ve , pan+ve p=&quot;{p}&quot; t=&quot;{t}&quot; ratio = &quot;{ratio}&quot;" MessageTextType="0" PreProcessedMessage="tiltdiff is greater, tilt-ve , pan+ve p=&quot;{0}&quot; t=&quot;{1}&quot; ratio = &quot;{2}&quot;" Condition="" ConditionType="1" CurrentHits="0" File="c:\users\abbro\source\repos\smart personality bin\bincode\bincode\bincode.ino" FileLine="415" FileColumn="1" FunctionName="eye_move(int pan, int tilt, int speed = 0)" FunctionLineOffset="36" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C++" LocationType="3" Tag="&lt;vmbp Id='1adb0d60-b96a-4fed-941a-d7977460aa5d'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="0">
+        <Source>408					}
+409				}
+410			}
+411			else if (tilt &lt; lasttilt)
+412			{
+413				if (pan &gt;= lastpan)
+414				{
+--&gt;415					for (t = lasttilt, p = lastpan; t &gt; tilt; t--, p += ratio)
+416					{
+417						tiltservo.write(t);
+418						panservo.write(p);
+419						delay(speed);
+420					}
+421				}
+422				else if (pan &lt; lastpan)
+423				{
+424					for (t = lasttilt, p = lastpan; t &gt; tilt; t--, p -= ratio)
 </Source>
         <MessageVariables>
-          <MessageVariable Name="angle" Index="1" />
-          <MessageVariable Name="tanratio" Index="2" />
+          <MessageVariable Name="p" Index="1" />
+          <MessageVariable Name="t" Index="2" />
+          <MessageVariable Name="ratio" Index="3" />
         </MessageVariables>
       </BreakPoint>
-      <BreakPoint Index="3" Name="Bincode.ino, line 490" Id="e29990ec-f68c-46a9-9fe2-d0a6d9aef131" Enabled="0" Message="{angle}{tanratio}" MessageTextType="2" PreProcessedMessage="{0}{1}" Condition="" ConditionType="1" CurrentHits="0" File="c:\users\anthony brown\source\repos\smart personality bin\bincode\bincode\bincode.ino" FileLine="490" FileColumn="1" FunctionName="looktomin (struct proxi_multi surround)" FunctionLineOffset="6" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C++" LocationType="3" Tag="&lt;vmbp Id='e29990ec-f68c-46a9-9fe2-d0a6d9aef131'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="0">
-        <Source>483	
-484	void looktomin (struct proxi_multi surround)
-485	{
-486		if (surround.sensor == pingleft)
-487		{
-488			//double tanratio = (avgheight-binheight) / surround.distance;	//get the tilt angle in degrees 
-489			//double angle = atan(tanratio) * deginrad;
---&gt;490			eye_move(maxpan, 70, 10);					//look to the right
-491		}
-492		else if (surround.sensor == pingright)
-493		{
-494			//double tanratio = (avgheight-binheight) / surround.distance;	//get the tilt angle in degrees 
-495			//double angle = atan(tanratio) * deginrad;
-496			eye_move(minpan, 70, 10);						//look to the left
-497		}
-498		else
-499		{
-</Source>
-        <MessageVariables>
-          <MessageVariable Name="angle" Index="1" />
-          <MessageVariable Name="tanratio" Index="2" />
-        </MessageVariables>
-      </BreakPoint>
-      <BreakPoint Index="4" Name="Bincode.ino, line 626" Id="8e971ab2-452d-4167-bc33-6c25f742b64b" Enabled="0" Message="eyereset" MessageTextType="0" PreProcessedMessage="eyereset" Condition="" ConditionType="1" CurrentHits="0" File="c:\users\anthony brown\source\repos\smart personality bin\bincode\bincode\bincode.ino" FileLine="626" FileColumn="1" FunctionName="loop()" FunctionLineOffset="19" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C++" LocationType="3" Tag="&lt;vmbp Id='8e971ab2-452d-4167-bc33-6c25f742b64b'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="0">
-        <Source>619			 motion = 0;
-620			 approached = 0;
-621		 }
-622		 if (!digitalRead(throwPIR))
-623			 throwin = 0;
-624		 if (!motion &amp;&amp; !throwin &amp;&amp; !approached &amp;&amp; !eyereset)
-625		 {
---&gt;626			 panservo.write(defpan);
-627			 tiltservo.write(deftilt);
-628			 eyereset = 1;
-629		 }
-630		 //Serial.print("frontPIR:");
-631		 //Serial.print(digitalRead(PIRpin));
-632		 //Serial.print("\t InnerPIR:");
-633		 //Serial.println(digitalRead(throwPIR));
-634		 delay(200);
-635	 }
+      <BreakPoint Index="5" Name="Bincode.ino, line 424" Id="669ccb70-fbfd-4d36-b623-6e3118fe77a4" Enabled="0" Message="tiltdiff is greater, tilt -ve , pan -ve" MessageTextType="0" PreProcessedMessage="tiltdiff is greater, tilt -ve , pan -ve" Condition="" ConditionType="1" CurrentHits="0" File="c:\users\abbro\source\repos\smart personality bin\bincode\bincode\bincode.ino" FileLine="424" FileColumn="1" FunctionName="eye_move(int pan, int tilt, int speed = 0)" FunctionLineOffset="45" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C++" LocationType="3" Tag="&lt;vmbp Id='669ccb70-fbfd-4d36-b623-6e3118fe77a4'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="0">
+        <Source>417						tiltservo.write(t);
+418						panservo.write(p);
+419						delay(speed);
+420					}
+421				}
+422				else if (pan &lt; lastpan)
+423				{
+--&gt;424					for (t = lasttilt, p = lastpan; t &gt; tilt; t--, p -= ratio)
+425					{
+426						tiltservo.write(t);
+427						panservo.write(p);
+428						delay(speed);
+429					}
+430				}
+431			}
+432		}
+433		else if (pandiff &gt; tiltdiff)
 </Source>
       </BreakPoint>
-      <BreakPoint Index="5" Name="Bincode.ino, line 502" Id="999db9c1-52ba-4a1e-a134-6dab0ba9fc9a" Enabled="0" Message="{angle}{tanratio}" MessageTextType="2" PreProcessedMessage="{0}{1}" Condition="" ConditionType="1" CurrentHits="0" File="c:\users\anthony brown\source\repos\smart personality bin\bincode\bincode\bincode.ino" FileLine="502" FileColumn="1" FunctionName="looktomin (struct proxi_multi surround)" FunctionLineOffset="18" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C++" LocationType="3" Tag="&lt;vmbp Id='999db9c1-52ba-4a1e-a134-6dab0ba9fc9a'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="0">
-        <Source>495			//double angle = atan(tanratio) * deginrad;
-496			eye_move(minpan, 70, 10);						//look to the left
-497		}
-498		else
-499		{
-500			//double tanratio = (avgheight - binheight) / surround.distance;	//get the tilt angle in degrees 
-501			//double angle = atan(tanratio) * deginrad;
---&gt;502			eye_move(defpan, 70, 10);						//look straight ahead
-503		}
-504	}
-505	//This in an ISR called every time the the outer PIR detects motion after a period of inactivity.
-506	 void motiondetect()  
-507	{
-508		 motion = 1;
-509	}
-510	
-511	 //will be caled whenever the motion flag is up.
+      <BreakPoint Index="6" Name="Bincode.ino, line 440" Id="4b5bcc77-5af8-4aef-8882-154cc456bc74" Enabled="0" Message="pandifff is greater, pan +ve , tilt +ve" MessageTextType="0" PreProcessedMessage="pandifff is greater, pan +ve , tilt +ve" Condition="" ConditionType="1" CurrentHits="0" File="c:\users\abbro\source\repos\smart personality bin\bincode\bincode\bincode.ino" FileLine="440" FileColumn="1" FunctionName="eye_move(int pan, int tilt, int speed = 0)" FunctionLineOffset="61" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C++" LocationType="3" Tag="&lt;vmbp Id='4b5bcc77-5af8-4aef-8882-154cc456bc74'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="0">
+        <Source>433		else if (pandiff &gt; tiltdiff)
+434		{
+435			double ratio = tiltdiff / pandiff;
+436			if (pan &gt;= lastpan)
+437			{
+438				if (tilt &gt;= lasttilt)
+439				{
+--&gt;440					for (p = lastpan, t = lasttilt; p &lt; pan; p++, t += ratio)
+441					{
+442						panservo.write(p);
+443						tiltservo.write(t);
+444						delay(speed);
+445					}
+446				}
+447				else if (tilt &lt; lasttilt)
+448				{
+449					for (p = lastpan, t = lasttilt; p &lt; pan; p++, t -= ratio)
 </Source>
-        <MessageVariables>
-          <MessageVariable Name="angle" Index="1" />
-          <MessageVariable Name="tanratio" Index="2" />
-        </MessageVariables>
       </BreakPoint>
-      <BreakPoint Index="6" Name="Bincode.ino, line 391" Id="dff8815c-a5e1-4561-a757-422a2e2dedbd" Enabled="0" Message="tiltdiff&gt;pandiff {pandiff} {tiltdiff}" MessageTextType="0" PreProcessedMessage="tiltdiff&gt;pandiff {0} {1}" Condition="" ConditionType="1" CurrentHits="0" File="c:\users\anthony brown\source\repos\smart personality bin\bincode\bincode\bincode.ino" FileLine="391" FileColumn="1" FunctionName="eye_move(int pan, int tilt, int speed = 0)" FunctionLineOffset="8" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C++" LocationType="3" Tag="&lt;vmbp Id='dff8815c-a5e1-4561-a757-422a2e2dedbd'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="0">
-        <Source>384		eyereset = 0;
-385		int lastpan = panservo.read();
-386		int lasttilt = tiltservo.read();
-387		int pandiff = abs(pan - lastpan);
-388		int tiltdiff = abs(tilt - lasttilt);
-389		float p, t;
-390		if (tiltdiff &gt;= pandiff)
---&gt;391		{
-392			float ratio = pandiff / tiltdiff;
-393			if (tilt &gt;= lasttilt)
-394			{
-395				if (pan &gt;= lastpan)
-396				{
-397					for (t = lasttilt, p = lastpan; t &lt; tilt; t++, p += ratio)
-398					{
-399						tiltservo.write(t);
-400						panservo.write(round(p));
+      <BreakPoint Index="7" Name="Bincode.ino, line 449" Id="ca5fa126-3cfd-4385-a316-86a33b94eb2d" Enabled="0" Message="pandiff is greater, pan + ve, tilt -ve" MessageTextType="0" PreProcessedMessage="pandiff is greater, pan + ve, tilt -ve" Condition="" ConditionType="1" CurrentHits="0" File="c:\users\abbro\source\repos\smart personality bin\bincode\bincode\bincode.ino" FileLine="449" FileColumn="1" FunctionName="eye_move(int pan, int tilt, int speed = 0)" FunctionLineOffset="70" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C++" LocationType="3" Tag="&lt;vmbp Id='ca5fa126-3cfd-4385-a316-86a33b94eb2d'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="0">
+        <Source>442						panservo.write(p);
+443						tiltservo.write(t);
+444						delay(speed);
+445					}
+446				}
+447				else if (tilt &lt; lasttilt)
+448				{
+--&gt;449					for (p = lastpan, t = lasttilt; p &lt; pan; p++, t -= ratio)
+450					{
+451						panservo.write(p);
+452						tiltservo.write(t);
+453						delay(speed);
+454					}
+455				}
+456			}
+457			else if (pan &lt; lastpan)
+458			{
+</Source>
+      </BreakPoint>
+      <BreakPoint Index="8" Name="Bincode.ino, line 461" Id="95ce63e7-d957-48db-866b-20d4659bf8fe" Enabled="0" Message="pandiff is greater, pan-ve , tilt +ve" MessageTextType="0" PreProcessedMessage="pandiff is greater, pan-ve , tilt +ve" Condition="" ConditionType="1" CurrentHits="0" File="c:\users\abbro\source\repos\smart personality bin\bincode\bincode\bincode.ino" FileLine="461" FileColumn="1" FunctionName="eye_move(int pan, int tilt, int speed = 0)" FunctionLineOffset="82" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C++" LocationType="3" Tag="&lt;vmbp Id='95ce63e7-d957-48db-866b-20d4659bf8fe'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="0">
+        <Source>454					}
+455				}
+456			}
+457			else if (pan &lt; lastpan)
+458			{
+459				if (tilt &gt; lasttilt)
+460				{
+--&gt;461					for (p = lastpan, t = lasttilt; p &gt; pan; p--, t += ratio)
+462					{
+463						panservo.write(p);
+464						tiltservo.write(t);
+465						delay(speed);
+466					}
+467				}
+468				else if (tilt &lt; lasttilt)
+469				{
+470					for (p = lastpan, t = lasttilt; p &gt; pan; p--, t -= ratio)
+</Source>
+      </BreakPoint>
+      <BreakPoint Index="9" Name="Bincode.ino, line 470" Id="77b10de4-31bb-4473-8630-713ecbcba1e0" Enabled="0" Message="pandiff is greater, pan -ve, tilt -ve" MessageTextType="0" PreProcessedMessage="pandiff is greater, pan -ve, tilt -ve" Condition="" ConditionType="1" CurrentHits="0" File="c:\users\abbro\source\repos\smart personality bin\bincode\bincode\bincode.ino" FileLine="470" FileColumn="1" FunctionName="eye_move(int pan, int tilt, int speed = 0)" FunctionLineOffset="91" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C++" LocationType="3" Tag="&lt;vmbp Id='77b10de4-31bb-4473-8630-713ecbcba1e0'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="0">
+        <Source>463						panservo.write(p);
+464						tiltservo.write(t);
+465						delay(speed);
+466					}
+467				}
+468				else if (tilt &lt; lasttilt)
+469				{
+--&gt;470					for (p = lastpan, t = lasttilt; p &gt; pan; p--, t -= ratio)
+471					{
+472						panservo.write(p);
+473						tiltservo.write(t);
+474						delay(speed);
+475					}
+476				}
+477			}
+478		}
+479	}
+</Source>
+      </BreakPoint>
+      <BreakPoint Index="10" Name="Bincode.ino, line 389" Id="aae08fa1-9424-4d97-bfd4-db5cf3d53823" Enabled="0" Message="{pandiff}{tiltdiff}{pan}{lastpan} {ratio}" MessageTextType="2" PreProcessedMessage="{0}{1}{2}{3} {4}" Condition="" ConditionType="1" CurrentHits="0" File="c:\users\abbro\source\repos\smart personality bin\bincode\bincode\bincode.ino" FileLine="389" FileColumn="1" FunctionName="eye_move(int pan, int tilt, int speed = 0)" FunctionLineOffset="10" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C++" LocationType="3" Tag="&lt;vmbp Id='aae08fa1-9424-4d97-bfd4-db5cf3d53823'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="0">
+        <Source>382		int lastpan = panservo.read();
+383		int lasttilt = tiltservo.read();
+384		double pandiff = abs(pan - lastpan);
+385		double tiltdiff = abs(tilt - lasttilt);
+386		double p, t;
+387		if (tiltdiff &gt;= pandiff)
+388		{
+--&gt;389			double ratio = pandiff / tiltdiff;
+390			if (tilt &gt;= lasttilt)
+391			{
+392				if (pan &gt;= lastpan)
+393				{
+394					for (t = lasttilt, p = lastpan; t &lt; tilt; t++, p += ratio)
+395					{
+396						tiltservo.write(t);
+397						panservo.write(p);
+398						delay(speed);
 </Source>
         <MessageVariables>
           <MessageVariable Name="pandiff" Index="1" />
           <MessageVariable Name="tiltdiff" Index="2" />
-        </MessageVariables>
-      </BreakPoint>
-      <BreakPoint Index="7" Name="Bincode.ino, line 437" Id="f937d54f-fe26-4a57-aaa6-375c97d60787" Enabled="0" Message="pandif &gt; tiltdiff {pandiff} {tiltdiff}" MessageTextType="0" PreProcessedMessage="pandif &gt; tiltdiff {0} {1}" Condition="" ConditionType="1" CurrentHits="0" File="c:\users\anthony brown\source\repos\smart personality bin\bincode\bincode\bincode.ino" FileLine="437" FileColumn="1" FunctionName="eye_move(int pan, int tilt, int speed = 0)" FunctionLineOffset="54" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C++" LocationType="3" Tag="&lt;vmbp Id='f937d54f-fe26-4a57-aaa6-375c97d60787'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="0">
-        <Source>430						panservo.write(round(p));
-431						delay(speed);
-432					}
-433				}
-434			}
-435		}
-436		else if (pandiff &gt; tiltdiff)
---&gt;437		{
-438			float ratio = tiltdiff / pandiff;
-439			if (pan &gt;= lastpan)
-440			{
-441				if (tilt &gt;= lasttilt)
-442				{
-443					for (p = lastpan, t = lasttilt; p &lt; pan; p++, t += ratio)
-444					{
-445						panservo.write(p);
-446						tiltservo.write(round(t));
-</Source>
-        <MessageVariables>
-          <MessageVariable Name="pandiff" Index="1" />
-          <MessageVariable Name="tiltdiff" Index="2" />
-        </MessageVariables>
-      </BreakPoint>
-      <BreakPoint Index="8" Name="Bincode.ino, line 486" Id="729da01f-8115-4ed6-994b-e7e774640ed0" Enabled="0" Message="{surround.sensor}" MessageTextType="2" PreProcessedMessage="{0}" Condition="" ConditionType="1" CurrentHits="0" File="c:\users\anthony brown\source\repos\smart personality bin\bincode\bincode\bincode.ino" FileLine="486" FileColumn="1" FunctionName="looktomin (struct proxi_multi surround)" FunctionLineOffset="2" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C++" LocationType="3" Tag="&lt;vmbp Id='729da01f-8115-4ed6-994b-e7e774640ed0'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="0">
-        <Source>479				}
-480			}
-481		}
-482	}
-483	
-484	void looktomin (struct proxi_multi surround)
-485	{
---&gt;486		if (surround.sensor == pingleft)
-487		{
-488			//double tanratio = (avgheight-binheight) / surround.distance;	//get the tilt angle in degrees 
-489			//double angle = atan(tanratio) * deginrad;
-490			eye_move(maxpan, 70, 10);					//look to the right
-491		}
-492		else if (surround.sensor == pingright)
-493		{
-494			//double tanratio = (avgheight-binheight) / surround.distance;	//get the tilt angle in degrees 
-495			//double angle = atan(tanratio) * deginrad;
-</Source>
-        <MessageVariables>
-          <MessageVariable Name="surround.sensor" Index="1" />
-        </MessageVariables>
-      </BreakPoint>
-      <BreakPoint Index="9" Name="Bincode.ino, line 521" Id="a3f825ec-43b3-4b63-8f6e-486904041147" Enabled="0" Message="{millis()}" MessageTextType="2" PreProcessedMessage="{0}" Condition="" ConditionType="1" CurrentHits="0" File="c:\users\anthony brown\source\repos\smart personality bin\bincode\bincode\bincode.ino" FileLine="521" FileColumn="1" FunctionName="motion_action()" FunctionLineOffset="9" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C++" LocationType="3" Tag="&lt;vmbp Id='a3f825ec-43b3-4b63-8f6e-486904041147'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="0">
-        <Source>514		 unsigned long motiontime = millis();//stores the time when motion was detected
-515		 //detachInterrupt(digitalPinToInterrupt(PIRpin)); //detatch the outer pir interrupt to avoid it interrupting playbackwhi	 
-516		 proxi_multi minsurround = proximity_multiple();
-517		 if (!throwin)
-518		 {
-519			 while (millis() - motiontime &lt; 2000 &amp;&amp; minsurround.distance&gt;50 &amp;&amp; !approached)
-520			 {
---&gt;521				 struct proxi_multi surroundtest = proximity_multiple();
-522				 if (surroundtest.distance &lt; minsurround.distance)
-523					 minsurround = surroundtest;
-524			 }
-525			 if (minsurround.distance &lt;= 50) //it means the person has come close. to the dustbin
-526			 {
-527				 if (!approached)
-528				 {
-529					 looktomin(minsurround);
-530					 playaudio(audio_select(approach));
-</Source>
-        <MessageVariables>
-          <MessageVariable Name="millis()" Index="1" />
+          <MessageVariable Name="pan" Index="3" />
+          <MessageVariable Name="lastpan" Index="4" />
+          <MessageVariable Name="ratio" Index="5" />
         </MessageVariables>
       </BreakPoint>
     </BreakPoints>
